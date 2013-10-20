@@ -1,4 +1,4 @@
-list = [3, 5, 1, 45, 6, 23, 19]
+list = [3, 5, 1, 45, 6, 87, 23, 19]
 
 def insertion_sort(list)
 
