@@ -1,13 +1,14 @@
+// Problem 14
 
-var find_longest_collatz_sequence = function() {
+var find_longest_collatz_sequence = function(limit) {
 
 	var start_time = (new Date()).getTime();
 
-	var maxCount = 0;
-	var optimal_n = 0;
+	var maxCount    = 0;
+	var optimal_n   = 0;
 	var optimal_arr = [];
 
-	for (n = 1; n <= 1000000; ++n)
+	for (n = 1; n <= limit; ++n)
 	{
 		//console.log("n = %d", n);
 		var x = n, count = 0, arr = [];
@@ -34,7 +35,7 @@ var find_longest_collatz_sequence = function() {
 		{
 			maxCount = count;
 			optimal_n = n;
-			optimal_arr = arr.slice(0);
+			optimal_arr = arr.slice(0); // creates a copy of the array
 		}
 	}
 
@@ -45,4 +46,4 @@ var find_longest_collatz_sequence = function() {
 	console.log("Total time taken in ms: %d", end_time - start_time);
 }
 
-find_longest_collatz_sequence();
+find_longest_collatz_sequence(1000000);
