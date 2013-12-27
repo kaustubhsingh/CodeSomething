@@ -16,7 +16,7 @@ var max_path_sum = function() {
 
 	var fs = require("fs");
 	
-	var triangle = fs.readFileSync("input2.txt").toString();
+	var triangle = fs.readFileSync(process.argv[2]).toString();
 	
 	var level = 0;
 	for (var i = 0; i < triangle.length; ++i)
