@@ -12,6 +12,9 @@ function max_path_sum_recurse(triangle, level, index, max_level) {
 	return max_sum;
 }
 
+
+// usage:  node maximum_path_sum_1.js <input file>
+
 var max_path_sum = function() {
 
 	var fs = require("fs");
