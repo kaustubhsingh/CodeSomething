@@ -35,7 +35,7 @@ var max_path_sum = function() {
 		return parseInt(x, 10);
 	});
 	
-	console.log(triangle);
+	//console.log(triangle);
 	
 	return max_path_sum_recurse(triangle, 1, 1, level);
 }
