@@ -40,4 +40,8 @@ var max_path_sum = function() {
 	return max_path_sum_recurse(triangle, 1, 1, level);
 }
 
+start_time = (new Date()).getTime();
+
 console.log(max_path_sum());
+
+console.log("time taken in ms: %d", (new Date()).getTime() - start_time);
