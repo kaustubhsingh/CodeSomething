@@ -47,4 +47,8 @@ var power_digit_sum = function(power) {
 	return sum;
 }
 
+start_time = (new Date()).getTime();
+
 console.log(power_digit_sum(1000));
+
+console.log("Time taken in seconds: %d", ((new Date()).getTime() - start_time)/1000);
