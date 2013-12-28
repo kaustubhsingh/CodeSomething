@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // usage:  node maximum_path_sum_1_ASYNC_READ.js <input file>
 
 function max_path_sum_recurse(triangle, level, index, max_level) {
