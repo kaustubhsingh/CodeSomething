@@ -2,6 +2,8 @@
 
 // usage:  node maximum_path_sum_1_ASYNC_READ.js <input file>
 
+start_time = (new Date()).getTime();
+
 function max_path_sum_recurse(triangle, level, index, max_level) {
 	
 	if (level > max_level) return 0;
@@ -48,7 +50,6 @@ var max_path_sum = function() {
 	fs.readFile(process.argv[2], callback);
 }
 
-start_time = (new Date()).getTime();
 max_path_sum();
 
 
