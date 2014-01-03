@@ -45,7 +45,7 @@ function number_to_words(n)
 	{
 		if (num_digits == 3)
 		{
-			number_str += n[0] + " hundred ";
+			number_str += word_map[n[0]] + " hundred ";
 			n.shift();
 		}
 		
@@ -53,19 +53,61 @@ function number_to_words(n)
 		{
 			if (n[0] != 0)
 			{
+				if (n[0] == 1)
+				{
+					switch (n[1])
+					{
+						case 0:
+							number_str += word_map[10]; break;
+
+						case 1: 
+							number_str += word_map[11]; break;
+							
+						case 2: 
+							number_str += word_map[12]; break;
+							
+						case 3: 
+							number_str += word_map[13]; break;
+							
+						case 4: 
+							number_str += word_map[14]; break;
+							
+						case 5: 
+							number_str += word_map[15]; break;
+							
+						case 6: 
+							number_str += word_map[16]; break;
+							
+						case 7: 
+							number_str += word_map[17]; break;
+							
+						case 8: 
+							number_str += word_map[18]; break;
+							
+						case 9: 
+							number_str += word_map[19]; break;							
+					}
+					return number_str;
+				}
 				
-			}
-			
+				if (n[0] >= 2)
+				{
+					number_str += word_map[(n[0] * 10)];
+					n.shift();
+				}
+			}	
 		}
+		
+		if (num_digits == 1)
+		{
+			number_str += word_map[n[0]];
+		}
+		return number_str;
 	}
 	else
 	{
 		console.log("input to %s() not supported", arguments.callee.name);
+		return number_str;
 	}
-	
-
-	
-
-	
 	
 }
