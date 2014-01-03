@@ -122,9 +122,9 @@ function number_to_words_helper(n)
 
 function number_to_words(n)
 {
-	alert("hi");
+
 	console.log(arguments.callee.name);
-	alert("hi"); document.write("hihi");
+
 	alert(number_to_words_helper(extract_digits(n)));
 }
 

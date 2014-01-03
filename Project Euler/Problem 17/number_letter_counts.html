@@ -1,11 +1,16 @@
 <html>
 	<head>
 		<script src="number_letter_counts.js"></script>
+		<script> function call() {
+				var num = document.getElementsByName("entry").item(0).value;
+				number_to_words(num);
+			}
+		</script>
 	</head>
 	<body>
 		<form>
-			<input type = "number" name = "entry" value = "value" >
-			<input type = "submit" onclick = "number_to_words(100)"/>
+			<input type = "number" name = "entry">
+			<input type = "submit" onclick = "call()"/>
 		</form>
 	</body>
 </html>
