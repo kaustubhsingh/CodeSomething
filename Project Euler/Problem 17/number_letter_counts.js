@@ -17,16 +17,55 @@ function extract_digits(n)
 		digits.unshift(n % 10);
 		n = Math.floor(n / 10);
 	}
+	
+	console.log("function name is %s()", arguments.callee.name);
 	return digits;
 }
 
-// console.log(extract_digits(324));
+console.log(extract_digits(324));
 
 function number_to_words(n)
 {
+	var number_str = "";
 	
+	var num_digits = n.length;
+	
+	if (num_digits == 4)
+	{
+			if (n != 1000)
+			{
+				console.log("Found a 4 digit input other than 1000 in %s", arguments.callee.name);
+				console.log("1000 is the only 4 digit number that is currently supported");
+				return;
+			}
+			else
+				return "One thousand";
+	}
+	else if (num_digits <= 3)
+	{
+		if (num_digits == 3)
+		{
+			number_str += n[0] + " hundred ";
+			n.shift();
+		}
+		
+		if (num_digits == 2)
+		{
+			if (n[0] != 0)
+			{
+				
+			}
+			
+		}
+	}
+	else
+	{
+		console.log("input to %s() not supported", arguments.callee.name);
+	}
+	
+
+	
+
 	
 	
 }
-
-
