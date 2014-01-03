@@ -101,7 +101,8 @@ function number_to_words(n)
 		
 		if (n.length == 1)
 		{
-			number_str += word_map[n[0]];
+			if (n[0] != 0)
+				number_str += word_map[n[0]];
 		}
 		return number_str;
 	}
@@ -114,3 +115,4 @@ function number_to_words(n)
 }
 
 console.log(number_to_words([5, 1, 3]));
+
