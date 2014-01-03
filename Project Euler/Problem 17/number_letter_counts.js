@@ -99,7 +99,10 @@ function number_to_words(n)
 					n.shift();
 				}
 			}	
-			n.shift();
+			else
+			{
+				n.shift();
+			}
 		}
 		
 		if (n.length == 1)
@@ -117,5 +120,5 @@ function number_to_words(n)
 	
 }
 
-console.log(number_to_words([5, 0, 1]));
+console.log(number_to_words([4, 5, 1]));
 
