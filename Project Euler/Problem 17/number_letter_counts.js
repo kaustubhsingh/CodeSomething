@@ -22,9 +22,10 @@ function extract_digits(n)
 	return digits;
 }
 
-console.log(extract_digits(324));
+// console.log(extract_digits(324));
 
-function number_to_words(n)
+// This function's argument is an array containing digits 
+function number_to_words_helper(n)
 {
 	var number_str = "";
 	
@@ -120,5 +121,10 @@ function number_to_words(n)
 	
 }
 
-console.log(number_to_words([4, 5, 1]));
+function number_to_words(n)
+{
+	number_to_words_helper(extract_digits(n));
+}
+
+console.log(number_to_words_helper([4, 5, 1]));
 
