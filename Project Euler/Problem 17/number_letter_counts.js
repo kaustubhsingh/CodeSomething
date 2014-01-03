@@ -45,11 +45,11 @@ function number_to_words(n)
 	{
 		if (num_digits == 3)
 		{
-			number_str += word_map[n[0]] + " hundred ";
+			number_str += word_map[n[0]] + " hundred and ";
 			n.shift();
 		}
 		
-		if (num_digits == 2)
+		if (n.length == 2)
 		{
 			if (n[0] != 0)
 			{
@@ -87,18 +87,19 @@ function number_to_words(n)
 						case 9: 
 							number_str += word_map[19]; break;							
 					}
-					return number_str;
+					return number_str + " ";
 				}
 				
 				if (n[0] >= 2)
 				{
-					number_str += word_map[(n[0] * 10)];
+					number_str += word_map[(n[0] * 10)] + " ";
 					n.shift();
 				}
 			}	
+			n.shift();
 		}
 		
-		if (num_digits == 1)
+		if (n.length == 1)
 		{
 			number_str += word_map[n[0]];
 		}
@@ -111,3 +112,5 @@ function number_to_words(n)
 	}
 	
 }
+
+console.log(number_to_words([5, 1, 3]));
