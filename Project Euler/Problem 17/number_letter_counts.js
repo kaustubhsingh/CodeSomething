@@ -45,7 +45,10 @@ function number_to_words(n)
 	{
 		if (num_digits == 3)
 		{
-			number_str += word_map[n[0]] + " hundred and ";
+			number_str += word_map[n[0]] + " hundred ";
+			if (n[1] !=  0 || n[2] != 0)
+				number_str += "and ";
+				
 			n.shift();
 		}
 		
@@ -114,5 +117,5 @@ function number_to_words(n)
 	
 }
 
-console.log(number_to_words([5, 1, 3]));
+console.log(number_to_words([5, 0, 1]));
 
