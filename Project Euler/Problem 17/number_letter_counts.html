@@ -3,15 +3,15 @@
 		<script src="number_letter_counts.js"></script>
 		<script> function call() {
 				var num = document.getElementsByName("entry").item(0).value;
-				document.getElementById("demo").innerHTML = number_to_words(num);
+				document.getElementById("demo").value = number_to_words(num);
 			}
 		</script>
 	</head>
 	<body>
 		<form>
 			<input type = "number" name = "entry">
-			<input type = "submit" onclick = "call()"/>
+			<input type = "submit" onclick = "call(); return false;"/>
 		</form>
-		<p id="demo"></p>
+		<input type = "text" id="demo">
 	</body>
 </html>
