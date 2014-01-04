@@ -141,9 +141,9 @@ function count_letters()
 			letter_str += number_to_words(n);
 	}
 	
-	console.log(letter_str);
+	//console.log(letter_str);
 	letter_str = letter_str.replace(/ /g, '');
-	console.log(letter_str);
+	//console.log(letter_str);
 	return letter_str.length;
 }
 
