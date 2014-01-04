@@ -130,7 +130,7 @@ function number_to_words(n)
 	
 }
 
-console.log(number_to_words(1000));
+//console.log(number_to_words(1000));
 
 function count_letters()
 {
