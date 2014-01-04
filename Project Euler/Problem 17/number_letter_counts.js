@@ -17,7 +17,7 @@ function extract_digits(n)
 		n = Math.floor(n / 10);
 	}
 	
-	console.log("function name is %s()", arguments.callee.name);
+	//console.log("function name is %s()", arguments.callee.name);
 	return digits;
 }
 
@@ -32,14 +32,15 @@ function number_to_words_helper(n)
 	
 	if (num_digits == 4)
 	{
-			if (n != 1000)
+			if (n[0] != 1 || n[1] != 0 || n[2] != 0 || n[3] != 0)
 			{
+				console.log(n);
 				console.log("Found a 4 digit input other than 1000 in %s", arguments.callee.name);
 				console.log("1000 is the only 4 digit number that is currently supported");
 				return;
 			}
 			else
-				return "One thousand";
+				return "one thousand";
 	}
 	else if (num_digits <= 3)
 	{
@@ -123,11 +124,28 @@ function number_to_words_helper(n)
 function number_to_words(n)
 {
 
-	console.log(arguments.callee.name);
+	//console.log(arguments.callee.name);
 
 	return (number_to_words_helper(extract_digits(n)));
 	
 }
+
+function count_letters()
+{
+	var letter_str = "";
+	
+	for (var n = 1; n <= 1000; ++n)
+	{
+			letter_str += number_to_words(n);
+	}
+	
+	//console.log(letter_str);
+	letter_str = letter_str.split(' ').toString();
+	//console.log(letter_str);
+	return letter_str.length;
+}
+
+console.log(count_letters());
 
 function call_from_html() 
 {
