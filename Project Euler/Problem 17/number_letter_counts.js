@@ -129,5 +129,11 @@ function number_to_words(n)
 	
 }
 
+function call_from_html() 
+{
+				var num = document.getElementsByName("entry").item(0).value;
+				document.getElementById("demo").value = number_to_words(num);
+}
+			
 //console.log(number_to_words_helper([4, 5, 1]));
 
