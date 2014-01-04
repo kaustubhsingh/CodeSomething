@@ -125,7 +125,8 @@ function number_to_words(n)
 
 	console.log(arguments.callee.name);
 
-	alert(number_to_words_helper(extract_digits(n)));
+	return (number_to_words_helper(extract_digits(n)));
+	
 }
 
 //console.log(number_to_words_helper([4, 5, 1]));

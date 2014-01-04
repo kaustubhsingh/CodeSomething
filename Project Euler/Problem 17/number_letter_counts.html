@@ -3,7 +3,7 @@
 		<script src="number_letter_counts.js"></script>
 		<script> function call() {
 				var num = document.getElementsByName("entry").item(0).value;
-				number_to_words(num);
+				document.getElementById("demo").innerHTML = number_to_words(num);
 			}
 		</script>
 	</head>
@@ -12,5 +12,6 @@
 			<input type = "number" name = "entry">
 			<input type = "submit" onclick = "call()"/>
 		</form>
+		<p id="demo"></p>
 	</body>
 </html>
