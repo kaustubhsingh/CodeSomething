@@ -12,5 +12,5 @@ def read_file
 	return numbers
 end
 
-read_file
+puts read_file
 
