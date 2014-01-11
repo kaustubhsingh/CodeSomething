@@ -1,6 +1,6 @@
-file = File.open("numbers.txt")
+file = File.read("numbers.txt")
 
-puts file.read
+puts file
 
 file.close
 
