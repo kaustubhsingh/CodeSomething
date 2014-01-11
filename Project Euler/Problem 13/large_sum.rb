@@ -1,10 +1,19 @@
-file = File.open("numbers.txt")
 
-numbers = file.read
+def read_file
 
-numbers = numbers.split("\n")
+	file = File.open("numbers.txt")
 
-puts numbers[0]
+	numbers = file.read.to_str
 
-file.close
+	numbers = numbers.split(/\n/)
+
+	puts numbers[0]
+
+	file.close
+
+	return numbers
+
+end
+
+read_file
 
