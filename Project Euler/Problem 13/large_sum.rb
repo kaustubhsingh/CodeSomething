@@ -56,7 +56,7 @@ def generate_first_ten_digits
 	
 	digit_str = digit_str.split("")
 	digit_str = digit_str[0..9]
-	puts digit_str
+	puts "First ten digits are #{digit_str}"
 end
 
 generate_first_ten_digits
