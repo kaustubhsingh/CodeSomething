@@ -23,7 +23,7 @@ def extract_digits
 	sum = 0
 	
 	for i in (49).downto(0)
-		puts "i = #{i}"
+		# puts "i = #{i}"
 	
 		numbers.each { |x|
 		
@@ -32,11 +32,11 @@ def extract_digits
 	
 		# puts "sum = #{sum}"
 		
-		digits.insert(0, sum % 10)
-		
-		if digits.length == 10
-			break
-		end
+		if i != 0 
+			digits.insert(0, sum % 10)
+		else
+			digits.insert(0, sum)
+		end	
 			
 		sum = sum / 10
 	end
