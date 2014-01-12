@@ -12,5 +12,13 @@ def read_file
 	return numbers
 end
 
-puts read_file
+
+def extract_digits
+
+	numbers = read_file
+	puts numbers[0][0]
+	
+end
+
+extract_digits	
 
