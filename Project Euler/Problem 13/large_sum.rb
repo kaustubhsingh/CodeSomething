@@ -17,8 +17,26 @@ def extract_digits
 
 	numbers = read_file
 	puts numbers[0][0]
+	digits = []
 	
+	for i in 0..49
+		sum = 0
+		numbers.each { |x|
+			sum = sum + x[i].to_i
+		}
+		
+		digits.insert(0, sum % 10)
+		
+		if digits.length == 10
+			break
+		end
+			
+		sum = sum / 10
+	end
+	
+	return digits
 end
 
-extract_digits	
+puts extract_digits	
+
 
