@@ -44,6 +44,20 @@ def extract_digits
 	return digits
 end
 
-puts extract_digits	
+def generate_first_ten_digits
 
+	digits = extract_digits	
+
+	digit_str = ""
+	
+	for i in 0..9
+		digit_str =  digit_str + digits[i].to_s
+	end
+	
+	digit_str = digit_str.split("")
+	digit_str = digit_str[0..9]
+	puts digit_str
+end
+
+generate_first_ten_digits
 
