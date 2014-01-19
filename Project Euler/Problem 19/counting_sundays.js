@@ -23,4 +23,16 @@ function isLeapYear(year)
 	return false;
 }
 
+function febDays(year)
+{
+	if (isLeapYear(year) == true)
+	{
+		return 29;
+	}
+	else
+	{
+		return 28;
+	}
+}
+
 
