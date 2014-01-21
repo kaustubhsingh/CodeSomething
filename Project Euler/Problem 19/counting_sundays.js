@@ -35,4 +35,13 @@ function febDays(year)
 	}
 }
 
-
+function loop20thCentury()
+{
+	var day = 1, month = 1, year = 1901;
+	
+	while (day != 31 && month != 12 && year != 2000)
+	{
+		
+		
+	}
+}
