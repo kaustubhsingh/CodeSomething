@@ -13,12 +13,17 @@ function Initialize() {
   
 }
  
+function getTPMEmail()
+{
+  return ["ksingh@marketshare.com", "kaustubh.singh@gmail.com"];  
+}
+
 function SendGoogleForm(e) 
 {  
   try 
   {  
     // You may also replace this with another email address
-    var email = "kaustubh.singh@gmail.com";
+    var email = getTPMEmail();
     
     // Optional but change the following variable
     // to have a custom subject for Google Docs emails
@@ -54,7 +59,7 @@ function SendGoogleForm(e)
     message = message.replace(/,/g,"");
 
     
-    message += "<b>Sheet URL : </b>" + SpreadsheetApp.getActiveSpreadsheet().getUrl() + "\n";
+    message += "<a href = SpreadsheetApp.getActiveSpreadsheet().getUrl()> <b>Knowledgebase URL</b> </a>";
    
     
     // This is the MailApp service of Google Apps Script
