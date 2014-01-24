@@ -35,13 +35,15 @@ function SendGoogleForm(e)
       
       if (topicRead == 0 && headers[i] == "Topic" && e.namedValues[headers[i]].toString() != "")
       {
-        message += headers[i] + ' :: '+ e.namedValues[headers[i]].toString() + "\n\n"; 
+        message += e.namedValues[headers[i]].toString() + "\n\n"; 
+        message = message.replace(",","");
         topicRead = 1;
       }
 
       if (infoRead == 0 && headers[i] == "Information" && e.namedValues[headers[i]].toString() != "")
       {
-        message += headers[i] + ' :: '+ e.namedValues[headers[i]].toString() + "\n\n"; 
+        message += e.namedValues[headers[i]].toString() + "\n\n";
+        message = message.replace(",","");
         infoRead = 1;
       }      
       
@@ -51,6 +53,7 @@ function SendGoogleForm(e)
       }
     }
  
+     message = message.replace(/,/g,"");
     /*
     for(var i in headers) {
       
@@ -67,7 +70,7 @@ function SendGoogleForm(e)
     // This is the MailApp service of Google Apps Script
     // that sends the email. You can also use GmailApp here.
     
-    MailApp.sendEmail(email, subject, message, { htmlBody: msgHtml }); 
+    MailApp.sendEmail(email, subject, message, { htmlBody: message }); 
     
   } catch (e) {
     Logger.log(e.toString());
