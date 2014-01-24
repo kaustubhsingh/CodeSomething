@@ -22,7 +22,7 @@ function SendGoogleForm(e)
     
     // Optional but change the following variable
     // to have a custom subject for Google Docs emails
-    var subject = "Google Docs Form Submitted";  
+    var subject = "TPM Knowledgebase has been updated!";  
     
     var s = SpreadsheetApp.getActiveSheet();
     var headers = s.getRange(1,1,1,s.getLastColumn()).getValues()[0];    
@@ -31,19 +31,17 @@ function SendGoogleForm(e)
   
     var topicRead = 0, infoRead = 0;
     
-    for(var i in headers) {
+    for (var i in headers) {
       
       if (topicRead == 0 && headers[i] == "Topic" && e.namedValues[headers[i]].toString() != "")
       {
-        message += e.namedValues[headers[i]].toString() + "\n\n"; 
-        message = message.replace(",","");
+        message += "<b>" + e.namedValues[headers[i]].toString() + "</b><br><br>"; 
         topicRead = 1;
       }
 
       if (infoRead == 0 && headers[i] == "Information" && e.namedValues[headers[i]].toString() != "")
       {
-        message += e.namedValues[headers[i]].toString() + "\n\n";
-        message = message.replace(",","");
+        message += e.namedValues[headers[i]].toString() + "<br><br>";
         infoRead = 1;
       }      
       
@@ -53,16 +51,8 @@ function SendGoogleForm(e)
       }
     }
  
-     message = message.replace(/,/g,"");
-    /*
-    for(var i in headers) {
-      
-      if (headers[i] == "Topic" && e.namedValues[headers[i]].toString() != "")
-      {
-        message += headers[i] + ' :: '+ e.namedValues[headers[i]].toString() + "\n\n"; 
-      }
-    }
-      */
+    message = message.replace(/,/g,"");
+
     
     message += "<b>Sheet URL : </b>" + SpreadsheetApp.getActiveSpreadsheet().getUrl() + "\n";
    
