@@ -64,7 +64,7 @@ function SendGoogleForm(e)
     }
       */
     
-    message += "Sheet URL :: " + SpreadsheetApp.getActiveSpreadsheet().getUrl() + "\n";
+    message += "<b>Sheet URL : </b>" + SpreadsheetApp.getActiveSpreadsheet().getUrl() + "\n";
    
     
     // This is the MailApp service of Google Apps Script
