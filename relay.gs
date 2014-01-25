@@ -15,57 +15,57 @@ function Initialize() {
  
 function getTPMEmail()
 {
-  return ["ksingh@marketshare.com", "kaustubh.singh@gmail.com"];  
+  return ["me@example.com"];
 }
 
 function SendGoogleForm(e) 
 {  
   try 
-  {  
-    // You may also replace this with another email address
+  { 
     var email = getTPMEmail();
-    
-    // Optional but change the following variable
-    // to have a custom subject for Google Docs emails
-    var subject = "TPM Knowledgebase has been updated!";  
     
     var s = SpreadsheetApp.getActiveSheet();
     var headers = s.getRange(1,1,1,s.getLastColumn()).getValues()[0];    
-    var message = "";    
-    
-  
+    var message = "";  
+    var userName = "";
     var topicRead = 0, infoRead = 0;
     
     for (var i in headers) {
       
       if (topicRead == 0 && headers[i] == "Topic" && e.namedValues[headers[i]].toString() != "")
       {
-        message += "<b>" + e.namedValues[headers[i]].toString() + "</b><br><br>"; 
+        message += "<b>" + e.namedValues[headers[i]].toString() + "</b><br><br>";
+        var subject = e.namedValues[headers[i]].toString();
+        subject = subject.replace(/,/g,"");
         topicRead = 1;
       }
 
       if (infoRead == 0 && headers[i] == "Information" && e.namedValues[headers[i]].toString() != "")
       {
-        message += e.namedValues[headers[i]].toString() + "<br><br>";
+        message += "<pre>" + e.namedValues[headers[i]].toString() + "</pre><br><br>";
         infoRead = 1;
-      }      
+      }  
+      
+      if (headers[i] == "Username" && userName == "")
+      {
+        userName = e.namedValues[headers[i]].toString();
+      }
       
       if (topicRead == 1 && infoRead == 1)
       {
         break;
       }
+     
     }
  
     message = message.replace(/,/g,"");
-
     
-    message += "<a href = SpreadsheetApp.getActiveSpreadsheet().getUrl()> <b>Knowledgebase URL</b> </a>";
-   
+    message += "<a href = \""+SpreadsheetApp.getActiveSpreadsheet().getUrl()+"\"> <b>Link to Knowledge Base</b> </a>";
+    message += "<br>";
+    message += "<a href = ""> <b>Link to Submit an Article</b> </a>";
     
-    // This is the MailApp service of Google Apps Script
-    // that sends the email. You can also use GmailApp here.
     
-    MailApp.sendEmail(email, subject, message, { htmlBody: message }); 
+    MailApp.sendEmail(email, subject, message, { htmlBody: message, name: userName, replyTo : userName }); 
     
   } catch (e) {
     Logger.log(e.toString());
