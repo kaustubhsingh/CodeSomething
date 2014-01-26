@@ -13,7 +13,7 @@ function Initialize() {
   
 }
  
-function getTPMEmail()
+function getEmail()
 {
   return ["me@example.com"];
 }
@@ -22,7 +22,7 @@ function SendGoogleForm(e)
 {  
   try 
   { 
-    var email = getTPMEmail();
+    var email = getEmail();
     
     var s = SpreadsheetApp.getActiveSheet();
     var headers = s.getRange(1,1,1,s.getLastColumn()).getValues()[0];    
