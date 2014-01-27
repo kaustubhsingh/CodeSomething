@@ -39,8 +39,9 @@ function loop20thCentury()
 {
 	var day_of_week = 1, day_of_month = 1, month = 1, year = 1900, sundays = 0;
 	
-	while (day_of_month != 31 && month != 12 && year != 2000)
+	while (day_of_month != 31 || month != 12 || year != 2000)
 	{
+		//console.log("running loop");
 		day_of_week++;
 		if (day_of_week > 7) day_of_week = 1;
 		
@@ -55,7 +56,7 @@ function loop20thCentury()
 		}
 		else
 		{
-			if (date_of_month > febDays(year))
+			if (day_of_month > febDays(year))
 			{
 				day_of_month = 1;
 				month++;
@@ -66,6 +67,7 @@ function loop20thCentury()
 		{
 			month = 1;
 			year++;
+			console.log(year);
 		}
 		
 		if (year > 1900)
