@@ -37,11 +37,46 @@ function febDays(year)
 
 function loop20thCentury()
 {
-	var day = 1, month = 1, year = 1901;
+	var day_of_week = 1, day_of_month = 1, month = 1, year = 1900, mondays = 0;
 	
-	while (day != 31 && month != 12 && year != 2000)
+	while (day_of_month != 31 && month != 12 && year != 2000)
 	{
+		day_of_week++;
+		if (day_of_week > 7) day_of_week = 1;
 		
+		day_of_month++;
+		if (month != 2)
+		{
+			if (day_of_month > month_days[month])
+			{
+				day_of_month = 1;
+				month++;
+			}
+		}
+		else
+		{
+			if (date_of_month > febDays(year))
+			{
+				day_of_month = 1;
+				month++;
+			}			
+		}
 		
+		if (month > 12)
+		{
+			month = 1;
+			year++;
+		}
+		
+		if (year > 1900)
+		{
+			if (day_of_week == 7 && day_of_month == 1)
+			{
+				mondays++;
+			}  
+		}
 	}
+	return mondays;
 }
+
+console.log(loop20thCentury())
