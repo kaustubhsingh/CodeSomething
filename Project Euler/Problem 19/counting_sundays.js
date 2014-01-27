@@ -37,7 +37,7 @@ function febDays(year)
 
 function loop20thCentury()
 {
-	var day_of_week = 1, day_of_month = 1, month = 1, year = 1900, mondays = 0;
+	var day_of_week = 1, day_of_month = 1, month = 1, year = 1900, sundays = 0;
 	
 	while (day_of_month != 31 && month != 12 && year != 2000)
 	{
@@ -72,11 +72,11 @@ function loop20thCentury()
 		{
 			if (day_of_week == 7 && day_of_month == 1)
 			{
-				mondays++;
+				sundays++;
 			}  
 		}
 	}
-	return mondays;
+	return sundays;
 }
 
 console.log(loop20thCentury())
