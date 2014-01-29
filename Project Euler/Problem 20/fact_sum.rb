@@ -10,6 +10,7 @@ def findDigitsAxB(a, b)
 	puts "xx"
 		if ((digit * b) < 10)
 			digits.insert(0, digit * b)
+			carry = 0
 		else
 			digits.insert(0, (digit * b) % 10)
 			carry = (digit * b) / 10
