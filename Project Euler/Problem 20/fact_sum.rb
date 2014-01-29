@@ -22,4 +22,4 @@ def findDigitsAxB(a, b)
 
 end
 
-puts findDigitsAxB(2, 5)
+puts findDigitsAxB(30, 120)
