@@ -4,7 +4,7 @@ def findDigitsAxB(a, b)
 	digits = []
 	carry = 0
 	
-	while ((a + carry) > 0)
+	while ((a * b + carry) > 0)
 		digit = (a + carry) % 10
 		a = (a + carry) / 10
 	
