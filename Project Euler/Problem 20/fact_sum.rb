@@ -26,10 +26,12 @@ end
 puts findDigitsAxB(30, 120)
 
 def factorial_sum
-	product = 1
+	product = [ 1]
 	
 	for i in (1..100)
-	
+		product = multiply(product, i)
 	end
-
+	
+	product.inject{|sum, x| sum + x}
+	return sum
 end
