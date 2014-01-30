@@ -1,3 +1,4 @@
+#!/bin/usr/ruby 
 
 def findDigitsAxB(a, b)
 	
@@ -23,3 +24,12 @@ def findDigitsAxB(a, b)
 end
 
 puts findDigitsAxB(30, 120)
+
+def factorial_sum
+	product = 1
+	
+	for i in (1..100)
+	
+	end
+
+end
