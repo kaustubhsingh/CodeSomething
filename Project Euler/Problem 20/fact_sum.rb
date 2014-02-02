@@ -63,9 +63,10 @@ def factorial_sum()
 	end
 	puts product[0]
 	puts product.length
+	
 	sum = 0
-	product.inject{|sum, x| sum + x}
-	return sum
+	return product.inject(0){|sum, x| sum + x}
+	#return sum
 end
 
 puts factorial_sum()
