@@ -25,6 +25,26 @@ end
 
 puts findDigitsAxB(30, 120)
 
+def multiply(product, n)
+	result = []
+	
+	length = product.length
+	
+	carry = 0
+	
+	for i in 0..length
+		digit = product[length - i]
+		
+		result.insert(0, (digit * n + carry) % 10)
+		carry = (digit * n + carry) / 10
+		
+	end
+	
+	return result
+
+end
+
+
 def factorial_sum
 	product = [ 1]
 	
@@ -35,3 +55,4 @@ def factorial_sum
 	product.inject{|sum, x| sum + x}
 	return sum
 end
+
