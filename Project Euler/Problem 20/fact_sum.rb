@@ -39,7 +39,11 @@ def multiply(product, n)
 		carry = (digit * n + carry) / 10
 		
 		if (i == (length - 1))
-			result.insert(0, carry)
+			while carry > 0
+			
+				result.insert(0, carry % 10)
+				carry = carry / 10
+			end
 		end
 	end
 	
@@ -54,10 +58,11 @@ def factorial_sum()
 	
 	for i in (1..100)
 		product = multiply(product, i)
-		puts product
-		puts "----"
+		#puts product
+		#puts "----"
 	end
-	
+	puts product[0]
+	puts product.length
 	sum = 0
 	product.inject{|sum, x| sum + x}
 	return sum
