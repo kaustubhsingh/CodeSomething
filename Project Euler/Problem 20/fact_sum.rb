@@ -58,15 +58,13 @@ def factorial_sum()
 	
 	for i in (1..100)
 		product = multiply(product, i)
-		#puts product
-		#puts "----"
 	end
 	puts product[0]
 	puts product.length
 	
 	sum = 0
 	return product.inject(0){|sum, x| sum + x}
-	#return sum
+	
 end
 
 puts factorial_sum()
