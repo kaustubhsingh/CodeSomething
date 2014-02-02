@@ -49,14 +49,18 @@ end
 
 # puts multiply([1, 2], 20)
 
-def factorial_sum
+def factorial_sum()
 	product = [ 1]
 	
 	for i in (1..100)
 		product = multiply(product, i)
+		puts product
+		puts "----"
 	end
 	
+	sum = 0
 	product.inject{|sum, x| sum + x}
 	return sum
 end
 
+puts factorial_sum()
