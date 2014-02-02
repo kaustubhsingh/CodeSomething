@@ -23,7 +23,7 @@ def findDigitsAxB(a, b)
 
 end
 
-puts findDigitsAxB(30, 120)
+# puts findDigitsAxB(30, 120)
 
 def multiply(product, n)
 	result = []
@@ -32,18 +32,22 @@ def multiply(product, n)
 	
 	carry = 0
 	
-	for i in 0..length
-		digit = product[length - i]
+	for i in 0..(length - 1)
+		digit = product[length - i - 1]
 		
 		result.insert(0, (digit * n + carry) % 10)
 		carry = (digit * n + carry) / 10
 		
+		if (i == (length - 1))
+			result.insert(0, carry)
+		end
 	end
 	
 	return result
 
 end
 
+# puts multiply([1, 2], 20)
 
 def factorial_sum
 	product = [ 1]
