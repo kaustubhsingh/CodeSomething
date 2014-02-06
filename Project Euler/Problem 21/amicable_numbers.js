@@ -25,5 +25,5 @@ function d(n)
 	return sum;
 }
 
-console.log(findDivisors(15))
-console.log(d(15))
+console.log(findDivisors(150))
+console.log(d(150))
