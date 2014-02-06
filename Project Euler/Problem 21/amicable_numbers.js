@@ -25,5 +25,16 @@ function d(n)
 	return sum;
 }
 
+function generateDirectory()
+{
+	var dir = {};
+	
+	for (var i = 0; i < 1000; ++i)
+		dir[i + 1] = d(i + 1);
+	
+	return dir;
+}
+
 console.log(findDivisors(150))
 console.log(d(150))
+console.log(dir)
