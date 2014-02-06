@@ -37,4 +37,4 @@ function generateDirectory()
 
 console.log(findDivisors(150))
 console.log(d(150))
-console.log(dir)
+console.log(generateDiretory())
