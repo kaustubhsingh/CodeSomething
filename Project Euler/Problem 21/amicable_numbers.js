@@ -14,3 +14,16 @@ function findDivisors(n)
 	return divisors;
 }
 
+function d(n)
+{
+	var divisors = findDivisors(n);
+	var sum = 0;
+	
+	for (var i = 0; i < divisors.length; ++i)
+		sum += divisors[i]
+		
+	return sum;
+}
+
+console.log(findDivisors(15))
+console.log(d(15))
