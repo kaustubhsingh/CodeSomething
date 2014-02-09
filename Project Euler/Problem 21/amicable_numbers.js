@@ -27,7 +27,7 @@ function d(n)
 
 function AmicableNumbers()
 {
-	var dir = {}, amicable = [], d_fn = [], index;
+	var dir = {}, amicable = [], d_fn = [ -1 ], index;
 	
 	for (var i = 0; i < 1000; ++i)
 	{
