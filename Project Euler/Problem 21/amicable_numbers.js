@@ -29,7 +29,7 @@ function AmicableNumbers()
 {
 	var dir = {}, amicable = [], d_fn = [ -1 ], index;
 	
-	for (var i = 0; i < 1000; ++i)
+	for (var i = 0; i < 10000; ++i)
 	{
 		dir[i + 1] = d(i + 1);
 		
@@ -60,7 +60,5 @@ function SumOfAmicableNos()
 	return sum
 }
 
-console.log(findDivisors(150))
-console.log(d(150))
 console.log(AmicableNumbers())
 console.log(SumOfAmicableNos())
