@@ -38,6 +38,9 @@ function AmicableNumbers()
 		if (index != -1 && index == dir[i +  1])
 		{
 			amicable.push(dir[i + 1]);
+			
+			if (amicable.indexOf(i + 1) == -1)
+				amicable.push(i + 1);
 		}
 		d_fn.push(dir[i + 1]);
 		
