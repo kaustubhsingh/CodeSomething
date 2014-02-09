@@ -31,13 +31,12 @@ function AmicableNumbers()
 
 	for (var i = 0; i < 10000; ++i)
 	{
-		d_fn.push(d(i + 1));
+		dir[i + 1] = d(i + 1);
+		d_fn.push(dir[i + 1]);
 	}
 		
 	for (var i = 0; i < 10000; ++i)
-	{
-		dir[i + 1] = d(i + 1);
-		
+	{	
 		index = d_fn.indexOf(i + 1);
 		
 		if (index != -1 && index == dir[i +  1] && (i + 1) != dir[i + 1])
