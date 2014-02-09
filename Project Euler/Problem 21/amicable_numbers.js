@@ -27,10 +27,20 @@ function d(n)
 
 function generateDirectory()
 {
-	var dir = {};
+	var dir = {}, amicable = [], d_fn = [], var index;
 	
 	for (var i = 0; i < 1000; ++i)
+	{
 		dir[i + 1] = d(i + 1);
+		
+		index = d_fn.indexOf(i + 1);
+		
+		if (index != -1 && index == dir[i +  1])
+		{
+			amicable.push(dir[i + 1]);
+		}
+		d_fn.push(dir[i + 1]);
+	}
 	
 	return dir;
 }
