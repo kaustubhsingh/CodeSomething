@@ -28,21 +28,27 @@ function d(n)
 function AmicableNumbers()
 {
 	var dir = {}, amicable = [], d_fn = [ -1 ], index;
-	
+
+	for (var i = 0; i < 10000; ++i)
+	{
+		d_fn.push(d(i + 1));
+	}
+		
 	for (var i = 0; i < 10000; ++i)
 	{
 		dir[i + 1] = d(i + 1);
 		
 		index = d_fn.indexOf(i + 1);
 		
-		if (index != -1 && index == dir[i +  1])
+		if (index != -1 && index == dir[i +  1] && (i + 1) != dir[i + 1])
 		{
+			if (amicable.indexOf(dir[i + 1]) == -1)
 			amicable.push(dir[i + 1]);
 			
 			if (amicable.indexOf(i + 1) == -1)
 				amicable.push(i + 1);
 		}
-		d_fn.push(dir[i + 1]);
+		//d_fn.push(dir[i + 1]);
 		
 	}
 	
@@ -55,10 +61,13 @@ function SumOfAmicableNos()
 	var sum = 0;
 	
 	for (var i = 0; i < arr.length; ++i)
+	{
+		console.log("%d  %d", arr[i], d(arr[i]));
 		sum += arr[i]
+	}
 		
 	return sum
 }
 
-console.log(AmicableNumbers())
+// console.log(AmicableNumbers())
 console.log(SumOfAmicableNos())
