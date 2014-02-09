@@ -25,9 +25,9 @@ function d(n)
 	return sum;
 }
 
-function generateDirectory()
+function AmicableNumbers()
 {
-	var dir = {}, amicable = [], d_fn = [], var index;
+	var dir = {}, amicable = [], d_fn = [], index;
 	
 	for (var i = 0; i < 1000; ++i)
 	{
@@ -40,6 +40,7 @@ function generateDirectory()
 			amicable.push(dir[i + 1]);
 		}
 		d_fn.push(dir[i + 1]);
+		
 	}
 	
 	return dir;
