@@ -43,9 +43,9 @@ function AmicableNumbers()
 		
 	}
 	
-	return dir;
+	return amicable;
 }
 
 console.log(findDivisors(150))
 console.log(d(150))
-console.log(generateDirectory())
+console.log(AmicableNumbers())
