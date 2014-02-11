@@ -10,7 +10,7 @@ Cells(3, "Z") = "Label"
 
 i = 4
 j = 4
-    While Cells(i, 4).Value <> ""
+    While Cells(i, 2).Value <> ""
             Cells(j, "T").Value = Cells(i, "E").Value
             
             If Cells(i, "H") <> "" Then
