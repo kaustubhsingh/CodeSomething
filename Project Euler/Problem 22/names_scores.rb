@@ -6,7 +6,7 @@ array = []
 
 f.each_line do |x| 
 		x = x.split ","
-		array.push(x)
+		array.push x
 end
 
 puts array
