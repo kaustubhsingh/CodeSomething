@@ -5,7 +5,7 @@ f  = File.open("names_2.txt")
 array = []
 
 f.each_line do |x| 
-		x = x.split ","
+		x = x.gsub(" ", "").split ","
 		puts x
 		puts "----"
 		puts x.length
