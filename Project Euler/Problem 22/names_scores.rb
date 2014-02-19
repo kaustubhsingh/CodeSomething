@@ -9,4 +9,5 @@ f.each_line do |x|
 		array.push x
 end
 
-puts array
+#puts array
+puts array.length
