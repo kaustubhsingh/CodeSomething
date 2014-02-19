@@ -2,6 +2,6 @@
 
 f  = File.open("names.txt")
 
-array = f.each{|x| return x}
+array = f.each{|x| x}
 
 puts array
