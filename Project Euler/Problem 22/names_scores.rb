@@ -1,18 +1,24 @@
 #!/usr/bin/ruby
 
-f  = File.open("names.txt")
+def readNamesAndSort()
 
-array = []
+	f  = File.open("names.txt")
 
-f.each_line do |x| 
-		x = x.gsub(" ", "").split ","
-		
-		x.each { |z|
-			array.push z
-		}
+	array = []
+
+	f.each_line do |x| 
+			x = x.gsub(" ", "").split ","
+			
+			x.each { |z|
+				array.push z
+			}
+	end
+
+	names = array
+
+	puts array
+	puts names.length
+
 end
 
-names = array
-
-puts array
-puts names.length
+readNamesAndSort()
