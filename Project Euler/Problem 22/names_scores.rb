@@ -14,11 +14,11 @@ def readNamesAndSort()
 			}
 	end
 
-	names = array
+	names = array.sort
 
-	puts array
+	#puts names
 	puts names.length
-
+	return names
 end
 
-readNamesAndSort()
+puts readNamesAndSort()
