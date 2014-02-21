@@ -21,4 +21,19 @@ def readNamesAndSort()
 	return names
 end
 
+def processSortedArray()
+
+	array = readNamesAndSort()
+	i = 0
+	array.each { |x|
+	i = i + 1;
+	
+	
+	print i print " " print x
+	
+	
+	}
+
+end
+
 puts readNamesAndSort()
