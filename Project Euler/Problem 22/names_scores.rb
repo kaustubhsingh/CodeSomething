@@ -16,7 +16,7 @@ def readNamesAndSort()
 
 	names = array.sort
 
-	#puts names
+	# puts names
 	puts names.length
 	return names
 end
