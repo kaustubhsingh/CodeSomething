@@ -29,11 +29,12 @@ def processSortedArray()
 	i = i + 1;
 	
 	
-	print i; print " "; print x
+	print i; print " "; print x; print "\n"
 	
 	
 	}
-
+	
+	return ""
 end
 
 puts processSortedArray()
