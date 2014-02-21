@@ -17,7 +17,7 @@ def readNamesAndSort()
 	names = array.sort
 
 	# puts names
-	puts names.length
+	# puts names.length
 	return names
 end
 
@@ -29,11 +29,11 @@ def processSortedArray()
 	i = i + 1;
 	
 	
-	print i print " " print x
+	print i; print " "; print x
 	
 	
 	}
 
 end
 
-puts readNamesAndSort()
+puts processSortedArray()
