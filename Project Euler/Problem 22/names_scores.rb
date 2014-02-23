@@ -21,23 +21,32 @@ def readNamesAndSort()
 	return names
 end
 
+def findAlphabeticalValue(y)
+
+		counter = y.length
+		x.each_char { |y|
+		
+			if counter > 0
+					alphabetical_value += (y - 'A')
+					counter-- 
+			end
+			
+		}
+		
+		return alphabetical_value
+end
+		
 def processSortedArray()
 
 	array = readNamesAndSort()
 	i = 0
 	array.each { |x|
-	i = i + 1;
-	
-	alphabetical_value = 0
-	
-	x.each_char { |y|
-		alphabetical_value += (y - "A") 
-	
-	}
-	
-	print i; print " "; print x; print alphabetical_value; print "\n"
-	
-	
+		i = i + 1;
+		
+		
+		print i; print " "; print x; print alphabetical_value(x); print "\n"
+		
+		
 	}
 	
 	return ""
