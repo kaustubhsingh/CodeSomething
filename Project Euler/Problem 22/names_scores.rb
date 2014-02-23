@@ -30,8 +30,8 @@ def processSortedArray()
 	
 	alphabetical_value = 0
 	
-	x.each { |y|
-		alphabetical_value += y - 'A' 
+	x.each_char { |y|
+		alphabetical_value += (y - "A") 
 	
 	}
 	
