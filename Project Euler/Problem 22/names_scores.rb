@@ -28,8 +28,14 @@ def processSortedArray()
 	array.each { |x|
 	i = i + 1;
 	
+	alphabetical_value = 0
 	
-	print i; print " "; print x; print "\n"
+	x.each { |y|
+		alphabetical_value += y - 'A' 
+	
+	}
+	
+	print i; print " "; print x; print alphabetical_value; print "\n"
 	
 	
 	}
