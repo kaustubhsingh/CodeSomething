@@ -24,14 +24,16 @@ end
 def findAlphabeticalValue(y)
 
 		counter = y.length
-		x.each_char { |y|
+		alphabetical_value = 0
 		
-			if counter > 0
-					alphabetical_value += (y - 'A')
+		y.split("").each do |z|
+		
+			if (counter > 0)
+					alphabetical_value += (z - 'A')
 					counter-- 
 			end
 			
-		}
+		end
 		
 		return alphabetical_value
 end
@@ -44,7 +46,7 @@ def processSortedArray()
 		i = i + 1;
 		
 		
-		print i; print " "; print x; print alphabetical_value(x); print "\n"
+		print i; print " "; print x; print findAlphabeticalValue(x); print "\n"
 		
 		
 	}
