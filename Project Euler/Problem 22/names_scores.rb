@@ -41,7 +41,6 @@ def findAlphabeticalValue(y)
 					end	
 		}
 		
-		puts alphabetical_value
 		return alphabetical_value
 end
 		
@@ -61,5 +60,5 @@ def processSortedArray()
 	return ""
 end
 
-#puts processSortedArray()
-findAlphabeticalValue("ABC")
+puts processSortedArray()
+#findAlphabeticalValue("ABC")
