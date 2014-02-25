@@ -25,16 +25,16 @@ def findAlphabeticalValue(y)
 
 		counter = y.length
 		alphabetical_value = 0
+	
+		y.gsub(/[^A-Z ]/i, '')
 		
-		y.split("").each do |z|
+		y.split("").each{ |z|
+					if z =~ /[A-Z ]/
+						alphabetical_value += (z.to_i - "A".to_i)	
+					end	
+		}
 		
-			if (counter > 0)
-					alphabetical_value += (z - 'A')
-					counter-- 
-			end
-			
-		end
-		
+		puts alphabetical_value
 		return alphabetical_value
 end
 		
