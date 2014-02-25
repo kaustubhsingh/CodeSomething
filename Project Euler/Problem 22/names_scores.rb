@@ -38,7 +38,7 @@ def findAlphabeticalValue(y)
 		y.split("").each{ |z|
 					if z =~ /[A-Z ]/
 					puts z.to_i
-						alphabetical_value += findValue(z)	
+						alphabetical_value += findValue[z]	
 					end	
 		}
 		
