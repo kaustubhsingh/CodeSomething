@@ -36,7 +36,7 @@ def findAlphabeticalValue(y)
 		
 		y.split("").each{ |z|
 					if z =~ /[A-Z ]/
-						puts z
+						#puts z
 						alphabetical_value += findValue[z]	
 					end	
 		}
@@ -52,7 +52,7 @@ def processSortedArray()
 		i = i + 1;
 		
 		
-		print i; print " "; print x; print findAlphabeticalValue(x); print "\n"
+		print i; print " "; print x; print " "; print findAlphabeticalValue(x); print "\n"
 		
 		
 	}
