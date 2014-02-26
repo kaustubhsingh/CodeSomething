@@ -48,12 +48,13 @@ def processSortedArray()
 
 	array = readNamesAndSort()
 	i = 0
+	score = []
 	array.each { |x|
 		i = i + 1;
 		
 		
 		print i; print " "; print x; print " "; print findAlphabeticalValue(x); print "\n"
-		
+		score.push(i * findAlphabeticalValue(x))
 		
 	}
 	
