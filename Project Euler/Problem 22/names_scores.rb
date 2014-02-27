@@ -53,7 +53,7 @@ def processSortedArray()
 		i = i + 1;
 		
 		
-		print i; print " "; print x; print " "; print findAlphabeticalValue(x); print "\n"
+		#print i; print " "; print x; print " "; print findAlphabeticalValue(x); print "\n"
 		score.push(i * findAlphabeticalValue(x))
 		
 	}
