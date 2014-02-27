@@ -58,7 +58,12 @@ def processSortedArray()
 		
 	}
 	
-	return ""
+	sum = 0
+	score.each { |x|
+		sum += x
+	}
+	
+	return sum
 end
 
 puts processSortedArray()
