@@ -1,4 +1,4 @@
 
-var findDivisors = require("amicable_numbers.js");
+var findDivisors = require("./amicable_numbers.js");
 
-findDivisors.findDivisors(10);
+console.log(findDivisors(10));

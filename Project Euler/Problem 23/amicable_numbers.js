@@ -68,6 +68,6 @@ function SumOfAmicableNos()
 }
 
 // console.log(AmicableNumbers())
-console.log(SumOfAmicableNos())
+// console.log(SumOfAmicableNos())
 
 module.exports = findDivisors;
