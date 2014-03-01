@@ -12,7 +12,6 @@ var isAbundant = function(n)
 	var i, sum = 0;
 	for (i in divisors)
 	{
-		console.log(i);
 		sum += divisors[i];
 	}
 	console.log(sum);
@@ -23,4 +22,15 @@ var isAbundant = function(n)
 		return false
 }
 
-console.log(isAbundant(10));
+function printAbundantStatus(n)
+{
+	for (var i = 1; i <= n; ++i)
+	{
+		console.log("%d %s" i, isAbundant(12));
+	}
+}
+
+printAbundantStatus(15);
+
+
+
