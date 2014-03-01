@@ -7,11 +7,12 @@ var isAbundant = function(n)
 {
 	var divisors = findDivisors(n);
 	
-	sum = 0;
-	for i in divisors
+	var i, sum = 0;
+	for (i in divisors)
 	{
 		sum += i;
 	}
+	console.log(sum);
 	if (sum > n)
 		return true;
 	else
