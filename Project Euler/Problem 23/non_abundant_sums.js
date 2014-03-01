@@ -26,7 +26,7 @@ function printAbundantStatus(n)
 {
 	for (var i = 1; i <= n; ++i)
 	{
-		console.log("%d %s" i, isAbundant(12));
+		console.log("%d %s", i, isAbundant(12));
 	}
 }
 
