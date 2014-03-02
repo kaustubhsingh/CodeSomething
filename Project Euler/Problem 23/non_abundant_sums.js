@@ -44,7 +44,7 @@ function findAbundantNos(n)
 	return abundantNos;
 }
 
-# printAbundantStatus(25);
+// printAbundantStatus(25);
 
 console.log(findAbundantNos(100));
 
