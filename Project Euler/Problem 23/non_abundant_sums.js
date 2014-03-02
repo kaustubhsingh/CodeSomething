@@ -30,7 +30,21 @@ function printAbundantStatus(n)
 	}
 }
 
-printAbundantStatus(25);
+function findAbundantNos(n)
+{
+	var abundantNos = [];
+	
+	for (var i = 1; i <=n; ++i)
+	{
+		if (isAbundant(i))
+		{
+			abundantNos.push(i);
+		}
+	}
+	return abundantNos;
+}
+
+# printAbundantStatus(25);
 
 
 
