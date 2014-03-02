@@ -46,5 +46,5 @@ function findAbundantNos(n)
 
 # printAbundantStatus(25);
 
-
+console.log(findAbundantNos(100));
 
