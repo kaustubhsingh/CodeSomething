@@ -48,3 +48,11 @@ function findAbundantNos(n)
 
 console.log(findAbundantNos(100));
 
+function isAbundantNosSum()
+{
+	
+	var lookup = findAbundantNos(28122);
+	
+	
+	
+}
