@@ -52,7 +52,14 @@ function isAbundantNosSum()
 {
 	
 	var lookup = findAbundantNos(28122);
+	var sum = 0;
 	
-	
-	
+	for (var i = 1; i <= 28122; ++i)
+	{
+		if (!isAbundantNosSum_helper(i, lookup))
+		{
+			sum += i;
+		}
+	}
+	return sum;
 }
