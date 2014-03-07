@@ -48,6 +48,11 @@ function findAbundantNos(n)
 
 console.log(findAbundantNos(100));
 
+function isPresent(n, lookup)
+{
+	
+}
+
 function isAbundantNosSum_helper(n, lookup)
 {
 	
@@ -56,7 +61,12 @@ function isAbundantNosSum_helper(n, lookup)
 		if (n > lookup[i])
 			break;
 			
-		if (isPresent(n - lookup[i]))
+		if (lookup[i] == (n - lookup[i]))
+		{
+			continue;
+		}
+		
+		if (isPresent(n - lookup[i], lookup))
 		{
 			return true;
 		}
