@@ -50,6 +50,8 @@ console.log(findAbundantNos(100));
 
 function isPresent(n, lookup)
 {
+	var length = lookup.length;
+	
 	
 }
 
