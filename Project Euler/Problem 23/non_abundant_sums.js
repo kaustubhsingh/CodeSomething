@@ -65,12 +65,12 @@ function isAbundantNosSum_helper(n, lookup)
 	
 	for (var i = 0; i < lookup.length; ++i)
 	{
-		if (n > lookup[i])
+		if (n > lookup[lookup.length - 1])
 			break;
 			
 		if (lookup[i] == (n - lookup[i]))
 		{
-			continue;
+			// continue;
 		}
 		
 		if (isPresent(n - lookup[i], lookup))
