@@ -91,6 +91,11 @@ function isAbundantNosSum()
 	{
 		if (!isAbundantNosSum_helper(i, lookup))
 		{
+			if (i < 100)
+			{
+				console.log(i)
+			}
+			
 			sum += i;
 		}
 	}
