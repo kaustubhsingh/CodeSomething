@@ -96,3 +96,5 @@ function isAbundantNosSum()
 	}
 	return sum;
 }
+
+console.log(isAbundantNosSum());
