@@ -52,7 +52,12 @@ function isPresent(n, lookup)
 {
 	var length = lookup.length;
 	
-	
+	for (var i = 0; i < length; ++i)
+	{
+		if (lookup[i] == n)
+			return true;
+	}
+	return false;
 }
 
 function isAbundantNosSum_helper(n, lookup)
