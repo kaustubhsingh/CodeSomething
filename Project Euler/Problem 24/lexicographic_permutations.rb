@@ -1,15 +1,32 @@
 #!/usr/bin/ruby
 
-def generatePermutation(str)
-	arr = []
-	str.split(//).each { |x|
-		arr.push(x)
+$results = []
 
-	} 
-	puts arr
+def generatePermutations(a, b)
 	
+	# print a; print b; print "\n"
+
+	if $results.length == 1000000
+		return
+	end
+
+
+	if b == ""
+		$results.push(a)
+		return
+	end
+
+	arr = []
+	b.split(//).each_with_index { |x, i|
+
+		generatePermutations(a + x, b[0, i] + b[i + 1..b.length - 1])
+		
+	} 
+	
+
 end
 
-generatePermutation("hiy")
+generatePermutations("", "0123456789")
+print $results[999999]
 
 
