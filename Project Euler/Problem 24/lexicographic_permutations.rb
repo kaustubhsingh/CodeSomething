@@ -16,7 +16,6 @@ def generatePermutations(a, b)
 		return
 	end
 
-	arr = []
 	b.split(//).each_with_index { |x, i|
 
 		generatePermutations(a + x, b[0, i] + b[i + 1..b.length - 1])

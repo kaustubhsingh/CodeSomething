@@ -6,6 +6,11 @@ def generatePermutations(a, b)
 	
 	# print a; print b; print "\n"
 
+	if $results.length == 1000000
+		return
+	end
+
+
 	if b == ""
 		$results.push(a)
 		return
