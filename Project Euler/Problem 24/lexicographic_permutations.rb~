@@ -2,8 +2,8 @@
 
 def generatePermutation(str)
 	arr = []
-	str.each { |x|
-		puts x
+	str.split(//).each { |x|
+		arr.push(x)
 
 	} 
 	
