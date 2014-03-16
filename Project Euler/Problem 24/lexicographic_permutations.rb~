@@ -1,4 +1,4 @@
-#!/usr/bin/rb
+#!/usr/bin/ruby
 
 def print()
 

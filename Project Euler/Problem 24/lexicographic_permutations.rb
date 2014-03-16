@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
-def print()
+def generatePermutation(str)
 
-	puts "test"
+	
 end
 
-print()
+
