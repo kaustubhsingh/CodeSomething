@@ -1,0 +1,101 @@
+2015-09-05T02:29:52.324242+00:00 heroku[run.8704]: Process exited with status 1
+2015-09-05T02:29:52.337759+00:00 heroku[run.8704]: State changed from up to complete
+2015-09-05T02:35:55.222906+00:00 heroku[router]: at=info method=GET path="/" host=arcane-river-3369.herokuapp.com request_id=4a179eca-3bcc-44c8-85e4-f089f70aafdf fwd="45.49.174.6" dyno=web.1 connect=1ms service=2ms status=200 bytes=172
+2015-09-05T02:52:14.109841+00:00 heroku[api]: Starting process with command `python manage.py db upgrade` by kaustubh.singh@gmail.com
+2015-09-05T02:52:19.975337+00:00 heroku[run.8676]: Awaiting client
+2015-09-05T02:52:20.035470+00:00 heroku[run.8676]: Starting process with command `python manage.py db upgrade`
+2015-09-05T02:52:20.241480+00:00 heroku[run.8676]: State changed from starting to up
+2015-09-05T02:52:23.844839+00:00 heroku[run.8676]: State changed from up to complete
+2015-09-05T02:52:23.821450+00:00 heroku[run.8676]: Process exited with status 1
+2015-09-05T03:10:46.123233+00:00 heroku[web.1]: Idling
+2015-09-05T03:10:46.124543+00:00 heroku[web.1]: State changed from up to down
+2015-09-05T03:10:46.124543+00:00 heroku[web.1]: State changed from down to starting
+2015-09-05T03:10:51.428788+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-09-05T03:10:52.362341+00:00 heroku[web.1]: Starting process with command `gunicorn app:app --log-file=-`
+2015-09-05T03:10:52.612661+00:00 app[web.1]: [2015-09-05 03:10:52 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-09-05T03:10:52.652818+00:00 app[web.1]: [2015-09-05 03:10:52 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-09-05T03:10:53.010519+00:00 app[web.1]: [2015-09-05 03:10:53 +0000] [3] [INFO] Handling signal: term
+2015-09-05T03:10:54.221162+00:00 app[web.1]: [2015-09-05 03:10:54 +0000] [3] [INFO] Shutting down: Master
+2015-09-05T03:10:56.007165+00:00 heroku[web.1]: Process exited with status 0
+2015-09-05T03:11:03.317380+00:00 app[web.1]: [2015-09-05 03:11:03 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-09-05T03:11:03.323513+00:00 app[web.1]: [2015-09-05 03:11:03 +0000] [3] [INFO] Using worker: sync
+2015-09-05T03:11:03.452460+00:00 app[web.1]: [2015-09-05 03:11:03 +0000] [10] [INFO] Booting worker with pid: 10
+2015-09-05T03:11:03.320812+00:00 app[web.1]: [2015-09-05 03:11:03 +0000] [3] [INFO] Listening at: http://0.0.0.0:37027 (3)
+2015-09-05T03:11:03.347144+00:00 app[web.1]: [2015-09-05 03:11:03 +0000] [9] [INFO] Booting worker with pid: 9
+2015-09-05T03:11:03.906585+00:00 heroku[web.1]: State changed from starting to up
+2015-09-05T03:45:12.545112+00:00 heroku[web.1]: Idling
+2015-09-05T03:45:12.545813+00:00 heroku[web.1]: State changed from up to down
+2015-09-05T03:45:15.650999+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-09-05T03:45:16.479232+00:00 app[web.1]: [2015-09-05 03:45:16 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-09-05T03:45:16.491825+00:00 app[web.1]: [2015-09-05 03:45:16 +0000] [3] [INFO] Shutting down: Master
+2015-09-05T03:45:16.479717+00:00 app[web.1]: [2015-09-05 03:45:16 +0000] [3] [INFO] Handling signal: term
+2015-09-05T03:45:16.472992+00:00 app[web.1]: [2015-09-05 03:45:16 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-09-05T03:45:17.358940+00:00 heroku[web.1]: Process exited with status 0
+2015-09-08T05:06:38.510594+00:00 heroku[slug-compiler]: Slug compilation started
+2015-09-08T05:06:38.510616+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-09-08T05:06:38.446813+00:00 heroku[api]: Deploy 74a650f by kaustubh.singh@gmail.com
+2015-09-08T05:06:38.446950+00:00 heroku[api]: Release v10 created by kaustubh.singh@gmail.com
+2015-09-08T05:06:42.613412+00:00 heroku[web.1]: Unidling
+2015-09-08T05:06:42.613843+00:00 heroku[web.1]: State changed from down to starting
+2015-09-08T05:06:47.467985+00:00 heroku[web.1]: Starting process with command `gunicorn app:app --log-file=-`
+2015-09-08T05:06:50.124131+00:00 app[web.1]: [2015-09-08 05:06:50 +0000] [3] [INFO] Listening at: http://0.0.0.0:43737 (3)
+2015-09-08T05:06:50.137793+00:00 app[web.1]: [2015-09-08 05:06:50 +0000] [9] [INFO] Booting worker with pid: 9
+2015-09-08T05:06:50.123422+00:00 app[web.1]: [2015-09-08 05:06:50 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-09-08T05:06:50.124279+00:00 app[web.1]: [2015-09-08 05:06:50 +0000] [3] [INFO] Using worker: sync
+2015-09-08T05:06:50.161437+00:00 app[web.1]: [2015-09-08 05:06:50 +0000] [10] [INFO] Booting worker with pid: 10
+2015-09-08T05:06:51.669195+00:00 heroku[router]: at=info method=GET path="/" host=arcane-river-3369.herokuapp.com request_id=09920776-9ed4-4a0c-9172-399614280f67 fwd="45.49.174.6" dyno=web.1 connect=1ms service=4ms status=200 bytes=172
+2015-09-08T05:06:51.127179+00:00 heroku[web.1]: State changed from starting to up
+2015-09-08T05:40:44.711268+00:00 heroku[web.1]: Idling
+2015-09-08T05:40:44.712008+00:00 heroku[web.1]: State changed from up to down
+2015-09-08T05:40:44.712811+00:00 heroku[web.1]: State changed from down to starting
+2015-09-08T05:40:46.326407+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-09-08T05:40:46.689435+00:00 app[web.1]: [2015-09-08 05:40:46 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-09-08T05:40:46.689443+00:00 app[web.1]: [2015-09-08 05:40:46 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-09-08T05:40:46.689446+00:00 app[web.1]: [2015-09-08 05:40:46 +0000] [3] [INFO] Handling signal: term
+2015-09-08T05:40:46.696526+00:00 app[web.1]: [2015-09-08 05:40:46 +0000] [3] [INFO] Shutting down: Master
+2015-09-08T05:40:47.605484+00:00 heroku[web.1]: Process exited with status 0
+2015-09-08T05:40:50.834905+00:00 heroku[web.1]: Starting process with command `gunicorn app:app --log-file=-`
+2015-09-08T05:40:51.889528+00:00 app[web.1]: [2015-09-08 05:40:51 +0000] [3] [INFO] Listening at: http://0.0.0.0:36412 (3)
+2015-09-08T05:40:51.900100+00:00 app[web.1]: [2015-09-08 05:40:51 +0000] [9] [INFO] Booting worker with pid: 9
+2015-09-08T05:40:51.889663+00:00 app[web.1]: [2015-09-08 05:40:51 +0000] [3] [INFO] Using worker: sync
+2015-09-08T05:40:51.888683+00:00 app[web.1]: [2015-09-08 05:40:51 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-09-08T05:40:51.992905+00:00 app[web.1]: [2015-09-08 05:40:51 +0000] [12] [INFO] Booting worker with pid: 12
+2015-09-08T05:40:52.346536+00:00 heroku[web.1]: State changed from starting to up
+2015-09-08T05:44:27.830949+00:00 heroku[api]: Deploy 86a3f85 by kaustubh.singh@gmail.com
+2015-09-08T05:44:27.831066+00:00 heroku[api]: Release v11 created by kaustubh.singh@gmail.com
+2015-09-08T05:44:27.906003+00:00 heroku[slug-compiler]: Slug compilation started
+2015-09-08T05:44:27.906021+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-09-08T05:44:27.947851+00:00 heroku[web.1]: State changed from up to starting
+2015-09-08T05:44:29.152787+00:00 app[web.1]: [2015-09-08 05:44:29 +0000] [12] [INFO] Worker exiting (pid: 12)
+2015-09-08T05:44:29.152792+00:00 app[web.1]: [2015-09-08 05:44:29 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-09-08T05:44:29.152794+00:00 app[web.1]: [2015-09-08 05:44:29 +0000] [3] [INFO] Handling signal: term
+2015-09-08T05:44:29.154224+00:00 app[web.1]: [2015-09-08 05:44:29 +0000] [3] [INFO] Shutting down: Master
+2015-09-08T05:44:29.001914+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-09-08T05:44:29.823955+00:00 heroku[web.1]: Process exited with status 0
+2015-09-08T05:44:33.242118+00:00 heroku[web.1]: Starting process with command `gunicorn app:app --log-file=-`
+2015-09-08T05:44:35.055382+00:00 app[web.1]: [2015-09-08 05:44:35 +0000] [3] [INFO] Listening at: http://0.0.0.0:8361 (3)
+2015-09-08T05:44:35.055476+00:00 app[web.1]: [2015-09-08 05:44:35 +0000] [3] [INFO] Using worker: sync
+2015-09-08T05:44:35.065043+00:00 app[web.1]: [2015-09-08 05:44:35 +0000] [9] [INFO] Booting worker with pid: 9
+2015-09-08T05:44:35.054778+00:00 app[web.1]: [2015-09-08 05:44:35 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-09-08T05:44:35.129197+00:00 app[web.1]: [2015-09-08 05:44:35 +0000] [10] [INFO] Booting worker with pid: 10
+2015-09-08T05:44:35.573566+00:00 heroku[web.1]: State changed from starting to up
+2015-09-08T05:44:36.333908+00:00 heroku[router]: at=info method=GET path="/" host=arcane-river-3369.herokuapp.com request_id=a9cc6b27-a70e-42fb-853d-3d9201da1f01 fwd="45.49.174.6" dyno=web.1 connect=13ms service=4ms status=200 bytes=172
+2015-09-08T05:46:45.021419+00:00 heroku[api]: Deploy b927ba1 by kaustubh.singh@gmail.com
+2015-09-08T05:46:45.021538+00:00 heroku[api]: Release v12 created by kaustubh.singh@gmail.com
+2015-09-08T05:46:45.080728+00:00 heroku[slug-compiler]: Slug compilation started
+2015-09-08T05:46:45.080745+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-09-08T05:46:45.163083+00:00 heroku[web.1]: State changed from up to starting
+2015-09-08T05:46:48.033760+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-09-08T05:46:48.702174+00:00 app[web.1]: [2015-09-08 05:46:48 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-09-08T05:46:48.703358+00:00 app[web.1]: [2015-09-08 05:46:48 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-09-08T05:46:48.702504+00:00 app[web.1]: [2015-09-08 05:46:48 +0000] [3] [INFO] Handling signal: term
+2015-09-08T05:46:48.715405+00:00 app[web.1]: [2015-09-08 05:46:48 +0000] [3] [INFO] Shutting down: Master
+2015-09-08T05:46:49.460324+00:00 heroku[web.1]: Starting process with command `gunicorn app:app --log-file=-`
+2015-09-08T05:46:49.531708+00:00 heroku[web.1]: Process exited with status 0
+2015-09-08T05:46:51.989061+00:00 app[web.1]: [2015-09-08 05:46:51 +0000] [3] [INFO] Listening at: http://0.0.0.0:26494 (3)
+2015-09-08T05:46:51.989153+00:00 app[web.1]: [2015-09-08 05:46:51 +0000] [3] [INFO] Using worker: sync
+2015-09-08T05:46:52.003513+00:00 app[web.1]: [2015-09-08 05:46:52 +0000] [9] [INFO] Booting worker with pid: 9
+2015-09-08T05:46:51.988175+00:00 app[web.1]: [2015-09-08 05:46:51 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-09-08T05:46:52.073088+00:00 app[web.1]: [2015-09-08 05:46:52 +0000] [10] [INFO] Booting worker with pid: 10
+2015-09-08T05:46:53.202285+00:00 heroku[web.1]: State changed from starting to up
+2015-09-08T05:46:54.221994+00:00 heroku[router]: at=info method=GET path="/" host=arcane-river-3369.herokuapp.com request_id=c475e9eb-e83f-427d-9971-c25df718d5cf fwd="45.49.174.6" dyno=web.1 connect=0ms service=31ms status=500 bytes=456

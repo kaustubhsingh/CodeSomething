@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordcount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <div class="container">
+        <div class="masthead">
+          <h3 class="text-muted">Project name</h3>
+          <nav>
+            <ul class="nav nav-justified">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1>Marketing stuff!</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+            <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+        </div>
+          
+          
+    
+        <h1>Wordcount 3000</h1>
+        <form role="form" method='POST' action='/'>
+          <div class="form-group">
+            <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL...">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        {% for error in errors %}
+          <h4>{{ error }}</h4>
+        {% endfor %}
+
+        <footer class="footer">
+          <p>&copy; Kaustubh Singh 2015</p>
+        </footer>          
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
