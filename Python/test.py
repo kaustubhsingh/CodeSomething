@@ -4,7 +4,8 @@ def test():
     fp = open('text.txt')
     for line in fp:
         line = line.rstrip()
-        x = re.findall('A+', line)
+        line = "ksingh@tes.com this is my email."
+        x = re.findall('$email.(\S+@\S+)', line)
         print x
         
 test()
