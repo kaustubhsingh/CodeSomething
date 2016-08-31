@@ -8,3 +8,5 @@ Git remote:
 git remote set-url origin https://github.com/kaustubhsingh/CodeSomething
 
 git remote add origin https://github.com/kaustubhsingh/CodeSomething
+
+source venv/bin/activate
