@@ -14,11 +14,13 @@ class WordCount:
     def BuildDictionary(self):
 		dicti = {}
 		for i in self.array:
-			dicti[i] = 1
-		return dicti
-		
+			if dicti.has_key(i):
+				dicti[i] = dicti.get(i) + 1
+			else:
+				dicti[i] = 1
+		return dicti.items()
+				
         
-
-a = WordCount("hello how are you").ExtractWords()    
+a = WordCount("hello how are you you").ExtractWords()    
 print (a.array)
 print (a.BuildDictionary())
