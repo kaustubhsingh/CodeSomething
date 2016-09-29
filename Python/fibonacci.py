@@ -23,7 +23,7 @@ def fibo_iterative(n):
 	fibo_n1 = 0
 	fibo_n2 = 1
 	
-	for ctr in range(n):
+	for _ in range(n):
 		fibo_n = fibo_n1 + fibo_n2 
 		fibo_n2 = fibo_n1
 		fibo_n1 = fibo_n
@@ -33,7 +33,7 @@ def fibo_iterative(n):
 print fibo_iterative(10)
 	
 def fibo_slow(n):
-	if n == 0 or n == 1:
+	if n in [0, 1]:
 		return n
 	else:
 		return fibo_slow(n - 1) + fibo_slow(n - 2)
