@@ -4,11 +4,14 @@
 			<meta charset="utf-8">
             <title>Angular App</title>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-			<script> src="app.js"</script>
+			<script src="app.js"></script>
         </head>
         <body>
-			<div ng-controller="Controller">
-				<h1>hi</h1>
+			
+			<h1>AngularJS App by </h1>
+			<div ng-controller="Controller1">
+				<input type="text" ng-model="name">
+				{{name}}
 			</div>
         </body>
     </html>

@@ -3,8 +3,9 @@
     
     angular.module('AngularApp', [])
     
-    .controller('Controller', function(){
+    .controller('Controller1', function($scope){
         
+            $scope.name = "KS";
         });
     
     })();
