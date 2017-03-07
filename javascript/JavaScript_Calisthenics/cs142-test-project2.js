@@ -19,7 +19,21 @@ var p3Message = 'SUCCESS';
 // Keep track of all the var statements
 var varDeclared = ['varDeclared', 'p1Message', 'p2Message', 'p3Message'];
 
-
+function cs142MakeMultiFilter(originalArray) {
+	
+	var current_array = originalArray;
+	
+	return function arrayFilterer(filter, callback) {
+		
+		for (var i = 0; i < current_array.length; ++i)
+		{
+			if (filter(current_array[i]) == 0)
+				current_array.splice(i, 1)
+		}
+		
+		return callback(current_array);
+	}
+}
 
 // ********************* Test cs142filter
 
