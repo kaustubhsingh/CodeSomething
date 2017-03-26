@@ -8,16 +8,16 @@
 			<script src="app.js"></script>
         </head>
         <body>
-			
-			<h1>AngularJS App by </h1>
+			<br><br><br><br><br>
+
 			<div ng-controller="Controller1" ng-click="hideToolTip()">
 				
-				<div ng-click="$event.stopPropagation()" ng-show="showToolTip">
-					<input type="text" ng-model="value"/>
+				<div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showToolTip">
+					<input type="button" value="Here is the tooltip!"/>
 					
 				</div>
-				
-				<p ng-click="toggleTooltip($event)">{{value}}</p>
+				<br><br>
+				<p ng-click="toggleToolTip($event)">Click to see tooltip</p>
 					
 			</div>
 
