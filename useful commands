@@ -10,3 +10,10 @@ git remote set-url origin https://github.com/kaustubhsingh/CodeSomething
 git remote add origin https://github.com/kaustubhsingh/CodeSomething
 
 source venv/bin/activate
+
+Get latest nodejs:
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo n latest

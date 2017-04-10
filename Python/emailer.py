@@ -21,5 +21,6 @@ def send_emails():
 	server.starttls()
 	server.login('gmail.com', 'password')
 	server.sendmail(fromaddr, toaddr, msg)
+	server.quit()
 
 
