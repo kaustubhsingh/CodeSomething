@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html ng-app="AngularApp">
+        <head>
+			<meta charset="utf-8">
+            <title>Angular Tooltip App</title>
+            <link rel="stylesheet" type="text/css" href="tooltip.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+			<script>
+			
+			(function(){
+				'use strict';
+				
+				angular.module('AngularApp', [])
+				
+				.controller('ToolTipController', function($scope){
+					
+						$scope.showToolTip = false;
+						
+						$scope.hideToolTip = function(){
+							
+							$scope.showToolTip = false;
+						}
+						
+						$scope.toggleToolTip = function(e) {
+							e.stopPropagation();
+							$scope.showToolTip = !$scope.showToolTip;
+							
+						}
+						
+					});
+				
+				})();
+			
+			</script>
+        </head>
+        <body>
+			<br><br><br><br><br>
+
+			<div ng-controller="ToolTipController" ng-click="hideToolTip()">
+				
+				<div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showToolTip">
+					<input type="button" value="A count of viewable impressions"/>
+					
+				</div>
+				<br><br>
+				<p ng-click="toggleToolTip($event)">Viewable Imps</p>
+					
+			</div>
+
+        </body>
+    </html>

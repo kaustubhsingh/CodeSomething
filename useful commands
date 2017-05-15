@@ -1,0 +1,19 @@
+Delete Heroku apps:
+
+for app in $(heroku apps); do heroku apps:destroy --app $app --confirm $app; done
+
+
+Git remote:
+
+git remote set-url origin https://github.com/kaustubhsingh/CodeSomething
+
+git remote add origin https://github.com/kaustubhsingh/CodeSomething
+
+source venv/bin/activate
+
+Get latest nodejs:
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo n latest

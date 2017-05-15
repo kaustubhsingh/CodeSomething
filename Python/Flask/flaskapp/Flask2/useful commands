@@ -1,0 +1,14 @@
+Delete Heroku apps:
+
+for app in $(heroku apps); do heroku apps:destroy --app $app --confirm $app; done
+
+
+Git remote:
+
+git remote set-url origin https://github.com/kaustubhsingh/CodeSomething
+
+git remote add origin https://github.com/kaustubhsingh/CodeSomething
+
+Activating virtual env:
+
+source venv/bin/activate
