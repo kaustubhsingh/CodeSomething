@@ -1,0 +1,59 @@
+2:56:37 PM  [main] 	Initializing Control Panel
+2:56:37 PM  [main] 	Windows Version: Windows 7 Home Premium SP1 64-bit
+2:56:37 PM  [main] 	XAMPP Version: 5.6.3
+2:56:37 PM  [main] 	Control Panel Version: 3.2.1  [ Compiled: May 7th 2013 ]
+2:56:37 PM  [main] 	You are not running with administrator rights! This will work for
+2:56:37 PM  [main] 	most application stuff but whenever you do something with services
+2:56:37 PM  [main] 	there will be a security dialogue or things will break! So think 
+2:56:37 PM  [main] 	about running this application with administrator rights!
+2:56:37 PM  [main] 	XAMPP Installation Directory: "c:\users\kaustubh singh\desktop\files\codesomething\d3.js\xampp\"
+2:56:37 PM  [main] 	WARNING: Your install directory contains spaces.  This may break programs/scripts
+2:56:37 PM  [main] 	Checking for prerequisites
+2:56:37 PM  [main] 	All prerequisites found
+2:56:37 PM  [main] 	Initializing Modules
+2:56:37 PM  [Apache] 	XAMPP Apache is already running on port 80
+2:56:37 PM  [Apache] 	XAMPP Apache is already running on port 443
+2:56:37 PM  [main] 	The MySQL module is disabled
+2:56:37 PM  [main] 	The FileZilla module is disabled
+2:56:37 PM  [main] 	The Mercury module is disabled
+2:56:37 PM  [main] 	The Tomcat module is disabled
+2:56:37 PM  [main] 	Starting Check-Timer
+2:56:37 PM  [main] 	Control Panel Ready
+2:56:39 PM  [Apache] 	Attempting to stop Apache (PID: 4124)
+2:56:39 PM  [Apache] 	Attempting to stop Apache (PID: 12236)
+2:56:40 PM  [Apache] 	Status change detected: stopped
+7:26:41 PM  [main] 	Deinitializing Modules
+7:26:41 PM  [main] 	Deinitializing Control Panel
+
+12:55:50 PM  [main] 	Initializing Control Panel
+12:55:50 PM  [main] 	Windows Version: Windows 7 Home Premium SP1 64-bit
+12:55:50 PM  [main] 	XAMPP Version: 5.6.3
+12:55:50 PM  [main] 	Control Panel Version: 3.2.1  [ Compiled: May 7th 2013 ]
+12:55:50 PM  [main] 	You are not running with administrator rights! This will work for
+12:55:50 PM  [main] 	most application stuff but whenever you do something with services
+12:55:50 PM  [main] 	there will be a security dialogue or things will break! So think 
+12:55:50 PM  [main] 	about running this application with administrator rights!
+12:55:50 PM  [main] 	XAMPP Installation Directory: "c:\users\kaustubh singh\desktop\files\codesomething\d3.js\xampp\"
+12:55:50 PM  [main] 	WARNING: Your install directory contains spaces.  This may break programs/scripts
+12:55:50 PM  [main] 	Checking for prerequisites
+12:56:08 PM  [main] 	All prerequisites found
+12:56:08 PM  [main] 	Initializing Modules
+12:56:08 PM  [main] 	The MySQL module is disabled
+12:56:08 PM  [main] 	The FileZilla module is disabled
+12:56:08 PM  [main] 	The Mercury module is disabled
+12:56:08 PM  [main] 	The Tomcat module is disabled
+12:56:08 PM  [main] 	Starting Check-Timer
+12:56:08 PM  [main] 	Control Panel Ready
+12:56:20 PM  [Apache] 	Attempting to start Apache app...
+12:56:21 PM  [Apache] 	Status change detected: running
+2:56:40 PM  [Apache] 	Status change detected: stopped
+2:56:40 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+2:56:40 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+2:56:40 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+2:56:40 PM  [Apache] 	Press the Logs button to view error logs and check
+2:56:40 PM  [Apache] 	the Windows Event Viewer for more clues
+2:56:40 PM  [Apache] 	If you need more help, copy and post this
+2:56:40 PM  [Apache] 	entire log window on the forums
+7:26:41 PM  [main] 	Deinitializing Modules
+7:26:41 PM  [main] 	Deinitializing Control Panel
+
