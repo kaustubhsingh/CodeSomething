@@ -10,8 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var list_component_1 = require('./list.component');
+var demo_module_1 = require('./demo.module');
 var AppComponent = (function () {
     function AppComponent() {
+        var generator = new demo_module_1.TextGenerator();
+        this.message = generator.getText();
     }
     AppComponent = __decorate([
         core_1.Component({
